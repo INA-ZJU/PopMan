@@ -7,6 +7,10 @@ selectPhotoPage {
   bottom: 9vh;
   width: 40vw;
   height: auto;
+  :focus{
+    left: 5vw;
+    bottom: 8vh;
+  }
 }
 .confirmButton {
   position: absolute;
@@ -14,4 +18,27 @@ selectPhotoPage {
   bottom:9vh;
   width: 40vw;
   height: auto;
+  :focus{
+    right: 7vw;
+    bottom: 8vh;
+  }
 }
+.selectedPhotoRegion {
+  background-size: cover;
+  position: absolute;
+  right: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 133.33vw;
+  overflow: hidden;
+  z-index: 1;
+}
+.selectedPhoto {
+  height: auto;
+  width: 100%;
+  left:50%;
+  top:0;
+  position: relative;
+  transform: translateX(-50%);
+}
+

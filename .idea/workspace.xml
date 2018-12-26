@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc17e890-b220-4b07-9760-dc73f8b2a5a7" name="Default" comment="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+    <list default="true" id="fc17e890-b220-4b07-9760-dc73f8b2a5a7" name="Default" comment=":construction: Add the select-photo page">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/popMan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +37,11 @@
       <file leaf-file-name="app.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="235">
+              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +49,8 @@
       <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="62" />
+            <state relative-caret-position="237">
+              <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -45,26 +61,17 @@
       <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            <state relative-caret-position="230">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadPhoto.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx">
+      <file leaf-file-name="generatePhoto.tsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectPhoto.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="57">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -72,11 +79,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectPhoto.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="uploadPhoto.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generatePhoto.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selectPhoto.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="51" column="92" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selectPhoto.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="103">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -85,16 +125,7 @@
         <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/head/head.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -124,13 +155,15 @@
         <option value="$PROJECT_DIR$/src/component/head/top.tsx" />
         <option value="$PROJECT_DIR$/src/component/head/head.tsx" />
         <option value="$PROJECT_DIR$/src/component/head/head.less" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.less" />
         <option value="$PROJECT_DIR$/src/pages/index/index.tsx" />
-        <option value="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less" />
         <option value="$PROJECT_DIR$/src/app.tsx" />
         <option value="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.less" />
         <option value="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx" />
         <option value="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.less" />
+        <option value="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less" />
+        <option value="$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.less" />
+        <option value="$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.tsx" />
       </list>
     </option>
   </component>
@@ -156,10 +189,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -221,6 +254,13 @@
               <item name="popMan" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="generatePhoto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="popMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="popMan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,6 +286,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -288,7 +329,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545664542181</updated>
-      <workItem from="1545664544626" duration="31282000" />
+      <workItem from="1545664544626" duration="46199000" />
     </task>
     <task id="LOCAL-00001" summary="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage">
       <created>1545809755420</created>
@@ -297,26 +338,32 @@
       <option name="project" value="LOCAL" />
       <updated>1545809755421</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":construction: Add the select-photo page">
+      <created>1545821193468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545821193469</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31282000" />
+    <option name="totallyTimeSpent" value="46199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1764706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21545003" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50460666" side_tool="true" visible="true" weight="0.22321428" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50460666" side_tool="true" weight="0.07860262" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49964565" weight="0.32908162" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49539334" visible="true" weight="0.22321428" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49539334" visible="true" weight="0.6783115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -334,17 +381,17 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17221828" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21545003" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="1" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4992743" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5007257" side_tool="true" weight="0.41293532" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49539334" visible="true" weight="0.06695779" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50460666" side_tool="true" weight="0.07860262" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49964565" weight="0.32908162" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info id="Favorites" order="1" side_tool="true" />
     </layout-to-restore>
@@ -357,7 +404,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage" />
+    <MESSAGE value=":construction: Add the select-photo page" />
+    <option name="LAST_COMMIT_MESSAGE" value=":construction: Add the select-photo page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/global.d.ts">
@@ -417,23 +465,6 @@
     <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/taro/types/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1787">
@@ -441,41 +472,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.less">
+    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/components/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.temp/pages/selectPhoto/selectPhoto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        <state relative-caret-position="1161">
+          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less">
+    <entry file="file://$PROJECT_DIR$/src/app.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="235">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="237">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state relative-caret-position="103">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="51" column="92" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/generatePhoto/generatePhoto.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

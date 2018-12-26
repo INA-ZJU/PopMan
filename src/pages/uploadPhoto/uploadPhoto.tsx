@@ -2,8 +2,8 @@ import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Image } from "@tarojs/components";
 import "./uploadPhoto.less";
 import uploadButtonImage from "../../assets/img/uploadButton.png";
-import generateButtonImage from "../../assets/img/generateButton.png";
 import cloudImage from "../../assets/img/cloud.png";
+
 
 export default class uploadPhoto extends Component {
   config: Config = {
@@ -14,10 +14,9 @@ export default class uploadPhoto extends Component {
     this.state={
       picUrl: "https://user-images.githubusercontent.com/37944486/50434396-eb69fb80-0917-11e9-9cc3-38593daba3ca.png",
       isSelected: false,
-      isUploaded: false
     }
   }
-  componentWillMount() {}
+
 
   componentDidMount() {}
 
@@ -42,34 +41,25 @@ export default class uploadPhoto extends Component {
       }
     })
   }
-  skipToSelect = url => {
-    Taro.redirectTo({ url }).catch(e => {
-      console.log(e);
-    });
-  };
+  skipToSelect({param}){
+    Taro.navigateTo({
+      url: `/pages/selectPhoto/selectPhoto?title=${param}`
+    })
+  }
   render() {
-    const { picUrl, isSelected, isUploaded } = this.state;
-    console.log(isUploaded);
+    const { picUrl, isSelected } = this.state;
     if(isSelected){
-      this.skipToSelect("/pages/selectPhoto/selectPhoto")
+      this.skipToSelect({param:picUrl})
     }
     return (
       <View className="uploadPhotoPage">
-        <Image className="uploadButton" src={uploadButtonImage} />
+         <Image className="uploadButton" src={uploadButtonImage} />
         <View
           className="uploadClickRegion"
           onClick={this.selectPhoto.bind(this)}
         />
-        {/*{isUploaded && <Image className="generateButton" src={generateButtonImage} />}*/}
-        {/*{isUploaded && <Image className="photo" src={picUrl} />}*/}
-        {/*{isUploaded && <View className="generateClickRegion" />}*/}
-        {isUploaded && <Image className="generateButton" src={generateButtonImage} />}
-        {isUploaded && <Image className="photo" src={picUrl} />}
-        {isUploaded && <View className="generateClickRegion" />}
         <Image className="cloud" src={cloudImage} />
       </View>
     );
-
-
   }
 }

@@ -23,7 +23,8 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/uploadPhoto/uploadPhoto',
-      'pages/selectPhoto/selectPhoto'
+      'pages/selectPhoto/selectPhoto',
+      'pages/generatePhoto/generatePhoto'
     ],
     window: {
       backgroundTextStyle: 'light',

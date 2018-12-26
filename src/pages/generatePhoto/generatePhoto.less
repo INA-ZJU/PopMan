@@ -1,0 +1,76 @@
+.uploadPhotoPage {
+  background-image: url('../../assets/img/uploadPhoto.png');
+  //background-image: url('../../assets/img/index.png');
+  background-size: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.generateButton {
+  position: absolute;
+  right: 6vw;
+  bottom: 6vh;
+  width: 55vw;
+  height: auto;
+  animation: myfirst 1.2s infinite;
+}
+.generateClickRegion {
+  position: absolute;
+  right: 6vw;
+  bottom: 6vh;
+  width: 55vw;
+  height: 14vh;
+}
+.uploadClickRegion {
+  position: absolute;
+  left: 24vw;
+  top: 29vh;
+  width: 53vw;
+  height: 410px;
+}
+.uploadButton {
+  position: absolute;
+  left: 24vw;
+  top: 29vh;
+  width: 53vw;
+  height: auto;
+}
+.photoRegion {
+  background-size: cover;
+  position: absolute;
+  left: 8.0vw;
+  top: 13.5vh;
+  width: 84vw;
+  height: 114vw;
+  overflow: hidden;
+  z-index: 1;
+}
+.photo {
+  position: relative;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%);
+}
+.cloud {
+  position: absolute;
+  left: 80vw;
+  top: 5vh;
+  width: 20vw;
+  height: auto;
+  z-index: 100;
+}
+
+@keyframes myfirst {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
