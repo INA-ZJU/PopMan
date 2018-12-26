@@ -1,5 +1,6 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import Index from './pages/index'
+import { connect } from 'dva'
 
 import './app.less'
 

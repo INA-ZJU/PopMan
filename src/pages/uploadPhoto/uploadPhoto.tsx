@@ -13,6 +13,7 @@ export default class uploadPhoto extends Component {
     super(...arguments)
     this.state={
       picUrl: "https://user-images.githubusercontent.com/37944486/50434396-eb69fb80-0917-11e9-9cc3-38593daba3ca.png",
+      isSelected: false,
       isUploaded: false
     }
   }
@@ -36,13 +37,22 @@ export default class uploadPhoto extends Component {
         let value = res && res.tempFilePaths[0];
         self.setState({
           picUrl: value,
+          isSelected: true
         });
       }
     })
   }
+  skipToSelect = url => {
+    Taro.redirectTo({ url }).catch(e => {
+      console.log(e);
+    });
+  };
   render() {
-    const { picUrl, isUploaded } = this.state;
-    console.log(this.state.isUploaded);
+    const { picUrl, isSelected, isUploaded } = this.state;
+    console.log(isUploaded);
+    if(isSelected){
+      this.skipToSelect("/pages/selectPhoto/selectPhoto")
+    }
     return (
       <View className="uploadPhotoPage">
         <Image className="uploadButton" src={uploadButtonImage} />
