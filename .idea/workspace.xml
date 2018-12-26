@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc17e890-b220-4b07-9760-dc73f8b2a5a7" name="Default" comment="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage">
-      <change afterPath="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/selectPhoto/selectPhoto.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uploadPhoto/uploadPhoto.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -298,7 +294,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545664542181</updated>
-      <workItem from="1545664544626" duration="27945000" />
+      <workItem from="1545664544626" duration="28652000" />
     </task>
     <task id="LOCAL-00001" summary="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage">
       <created>1545809755420</created>
@@ -311,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27945000" />
+    <option name="totallyTimeSpent" value="28652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -320,12 +316,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1275691" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50389796" side_tool="true" visible="true" weight="0.4987245" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50460666" side_tool="true" visible="true" weight="0.4987245" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49964565" weight="0.32908162" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49610206" visible="true" weight="0.4987245" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49539334" visible="true" weight="0.4987245" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
