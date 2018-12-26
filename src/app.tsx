@@ -21,7 +21,8 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/index/index',
-      'pages/uploadPhoto/uploadPhoto'
+      'pages/uploadPhoto/uploadPhoto',
+      'pages/selectPhoto/selectPhoto'
     ],
     window: {
       backgroundTextStyle: 'light',

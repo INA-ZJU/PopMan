@@ -13,7 +13,7 @@ export default class uploadPhoto extends Component {
     super(...arguments)
     this.state={
       picUrl: "https://user-images.githubusercontent.com/37944486/50434396-eb69fb80-0917-11e9-9cc3-38593daba3ca.png",
-      isUploaded: true
+      isUploaded: false
     }
   }
   componentWillMount() {}
@@ -26,7 +26,20 @@ export default class uploadPhoto extends Component {
 
   componentDidHide() {}
 
-  selectPhoto() {}
+  selectPhoto() {
+    let self = this;
+    Taro.chooseImage({
+      count: 1,
+      sizeType: ['compressed'],
+      sourceType: ['album'],
+      success: function (res) {
+        let value = res && res.tempFilePaths[0];
+        self.setState({
+          picUrl: value,
+        });
+      }
+    })
+  }
   render() {
     const { picUrl, isUploaded } = this.state;
     console.log(this.state.isUploaded);
