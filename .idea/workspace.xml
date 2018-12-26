@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc17e890-b220-4b07-9760-dc73f8b2a5a7" name="Default" comment="" />
+    <list default="true" id="fc17e890-b220-4b07-9760-dc73f8b2a5a7" name="Default" comment="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -278,7 +280,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545664542181</updated>
-      <workItem from="1545664544626" duration="24888000" />
+      <workItem from="1545664544626" duration="25505000" />
     </task>
     <task id="LOCAL-00001" summary="Completed some basic functions for PopMan, including homepage and the layout of uploadPhotoPage">
       <created>1545809755420</created>
@@ -291,7 +293,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24888000" />
+    <option name="totallyTimeSpent" value="25505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
