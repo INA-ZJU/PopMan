@@ -1,5 +1,5 @@
-.uploadPhotoPage {
-  background-image: url('../../assets/img/uploadPhoto.png');
+.generatePhotoPage {
+  background-image: url("../../assets/img/uploadPhoto.png");
   //background-image: url('../../assets/img/index.png');
   background-size: 100%;
   position: fixed;
@@ -38,12 +38,22 @@
 .photoRegion {
   background-size: cover;
   position: absolute;
-  left: 8.0vw;
+  left: 8vw;
   top: 13.5vh;
   width: 84vw;
   height: 114vw;
   overflow: hidden;
-  z-index: 1;
+  z-index: 10;
+}
+.photoBg {
+  background-size: cover;
+  position: absolute;
+  left: 8vw;
+  top: 13.5vh;
+  width: 84vw;
+  height: 114vw;
+  overflow: hidden;
+  z-index: 100;
 }
 .photo {
   position: relative;
@@ -52,6 +62,7 @@
   width: 100%;
   height: auto;
   transform: translateX(-50%);
+  max-width: 100%;
 }
 .cloud {
   position: absolute;
@@ -61,7 +72,46 @@
   height: auto;
   z-index: 100;
 }
-
+.saveText {
+  position: absolute;
+  left: 2vw;
+  top: 2vh;
+  width: 70vw;
+  height: auto;
+  z-index: 10000;
+}
+.changeFace {
+  position: absolute;
+  left: 5vw;
+  top: 81vh;
+  width: 43vw;
+  height: auto;
+  z-index: 10;
+}
+.changeFaceRegion {
+  position: absolute;
+  left: 5vw;
+  top: 81vh;
+  width: 43vw;
+  height: 30vw;
+  z-index: 100000;
+}
+.shareButton {
+  position: absolute;
+  left: 52vw;
+  top: 81vh;
+  width: 43vw;
+  height: auto;
+  z-index: 10;
+}
+.shareButtonRegion {
+  position: absolute;
+  left: 52vw;
+  top: 81vh;
+  width: 43vw;
+  height: 30vw;
+  z-index: 100000;
+}
 @keyframes myfirst {
   0% {
     transform: translate(0px, 0px);
@@ -73,4 +123,3 @@
     transform: translate(0px, 0px);
   }
 }
-
