@@ -2,6 +2,8 @@ import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Image } from "@tarojs/components";
 import "./index.less";
 import enterButtonImage from "../../assets/img/enter.png";
+import saoqiTextImage from "../../assets/img/saoqiText.png";
+
 
 export default class Index extends Component {
   // state={
@@ -36,6 +38,7 @@ export default class Index extends Component {
     return (
       <View className="homePage">
         <Image className="enterButton" src={enterButtonImage} />
+        <Image className="saoqiText" src={saoqiTextImage}></Image>
         <View
           className="clickRegion"
           onClick={() => {

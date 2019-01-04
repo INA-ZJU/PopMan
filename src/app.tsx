@@ -24,7 +24,9 @@ class App extends Component {
       'pages/index/index',
       'pages/uploadPhoto/uploadPhoto',
       'pages/selectPhoto/selectPhoto',
-      'pages/generatePhoto/generatePhoto'
+      'pages/generatePhoto/generatePhoto',
+      // 'pages/downloadPhoto/downloadPhoto',
+
     ],
     window: {
       backgroundTextStyle: 'light',

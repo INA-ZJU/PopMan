@@ -17,7 +17,8 @@ export default class generatePhoto extends Component {
     this.state = {
       picUrl:
         "https://user-images.githubusercontent.com/37944486/50434396-eb69fb80-0917-11e9-9cc3-38593daba3ca.png",
-      isGenerated: false
+      isGenerated: false,
+      isLoading: false
     };
   }
   componentWillMount() {
@@ -46,43 +47,41 @@ export default class generatePhoto extends Component {
         })
         .join("");
       mediaType = xhr.getResponseHeader("content-type");
-      // base64 = [
-      //   'data:',
-      //   mediaType ? mediaType + ';':'',
-      //   'base64,',
-      //   btoa(binary)
-      // ].join('');
-      base64 = [btoa(binary)];
+      base64 = [btoa(binary)].join("");
       onSuccess(base64);
     };
     xhr.send();
   }
 
   requestList = base64 => {
-    console.log(base64);
-    // base64Img.requestBase64(this.state.picUrl, (err, res, body) => {
-    //   axios.post("", { params: body }).then(response => {
-    //     let result = response.result.picUrl;
-    //     this.setState({
-    //       picUrl: `data:image/png;base64,${result}`,
-    //       isGenerated: true
-    //     });
-    //   });
-    // })
-
+    console.log("hello");
+    console.log(base64.toString());
+    let formData = new FormData();
+    formData.append("image", base64.toString());
+    let config = {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    };
     axios
-      .post("http://10.214.130.31:3000/upload", { params: base64 })
+      .post("http://10.214.130.31:3000/upload", formData, config)
       .then(response => {
-        let result = response.image;
+        let result = response.data;
         this.setState({
           picUrl: `data:image/png;base64,${result}`,
-          isGenerated: true
+          isGenerated: true,
+          isLoading: false
         });
+        console.log(response);
+      })
+      .catch(response => {
+        console.log(response);
       });
   };
 
   handleGenerate() {
     // this.requestList();
+    this.setState({ isLoading: true });
     this.getBase64FromImage(this.state.picUrl, this.requestList);
   }
 
@@ -100,7 +99,7 @@ export default class generatePhoto extends Component {
   shareImg() {}
 
   render() {
-    const { picUrl, isGenerated } = this.state;
+    const { picUrl, isGenerated, isLoading } = this.state;
     const randomNum = Math.floor(Math.random() * 3);
     console.log(randomNum);
     const bgArray = [
@@ -110,6 +109,7 @@ export default class generatePhoto extends Component {
     ];
     return (
       <View className="generatePhotoPage">
+        {isLoading && <View className="loader" />}
         {!isGenerated && (
           <Image className="generateButton" src={generateButtonImage} />
         )}
@@ -150,6 +150,12 @@ export default class generatePhoto extends Component {
           className="photoRegion"
           style={{ backgroundImage: `url(${picUrl})` }}
         />
+        {isLoading && (
+          <View
+            className="photoRegion"
+            style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+          />
+        )}
         {/*<Image className="photoRegion" id="imageid" src={picUrl} />*/}
         <Image className="cloud" src={cloudImage} />
       </View>

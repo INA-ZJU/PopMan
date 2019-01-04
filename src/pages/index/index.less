@@ -1,18 +1,38 @@
 .homePage {
-  background-image: url('../../assets/img/index.png');
+  background-image: url("../../assets/img/indexBg.png");
   background-size: 100%;
   position: fixed;
   width: 100%;
   height: 177.7vw;
   overflow: hidden;
 }
+.saoqiText {
+  position: absolute;
+  left: -3.3vw;
+  top: -2.6vh;
+  width: 56vw;
+  height: auto;
+  -webkit-animation:myRotate 10s linear infinite;
+  animation:myRotate 1s normal infinite;
+}
+
+@-webkit-keyframes myRotate {
+  0%{ -webkit-transform: rotate(0deg);}
+  50%{ -webkit-transform: rotate(3deg);}
+  100%{ -webkit-transform: rotate(-3deg);}
+}
+@keyframes myRotate {
+  0%{ -webkit-transform: rotate(0deg);}
+  50%{ -webkit-transform: rotate(3deg);}
+  100%{ -webkit-transform: rotate(-3deg);}
+}
 
 .clickRegion {
   position: absolute;
   left: 60vw;
   top: 84vh;
-  width: 200PX;
-  height: 200PX;
+  width: 200px;
+  height: 200px;
 }
 .enterButton {
   position: absolute;
@@ -21,7 +41,7 @@
   width: 28vw;
   height: auto;
   animation: myfirst 1.2s infinite;
-  :focus{
+  :focus {
     left: 73vw;
     top: 90vh;
   }
@@ -38,4 +58,3 @@
     transform: translate(0px, 0px);
   }
 }
-
